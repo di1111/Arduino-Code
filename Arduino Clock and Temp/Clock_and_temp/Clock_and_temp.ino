@@ -5,8 +5,7 @@
 This Program takes the temp from a sense wire and outputs the time and temp.
 
  */
-
-int inByte = 0;         // incoming serial byte
+ 
 int outputpin = 0      // Tempture output
 int timeseconds = 0
 int timemin = 0
@@ -29,17 +28,13 @@ void loop()
 float millivolts= (rawvoltage/1024.0) * 5000;
 float celsius= millivolts/10;
 float fahrenheit = (celsius * 9)/5 +32;
+timerecord()
 
-Serial.println(fahrenheit + "F");
+Serial.println (timehours + ":" + timemin + ":" + timeseconds);
+Serial.println(fahrenheit + "°F");
 delay(1000);
 }
 
-void establishContact() {
-  while (Serial.available() <= 0) {
-    Serial.print('A');   // send a capital A
-    delay(300);
-  }
-}
 
 void timerecord() {
   if (timeseconds < 9) {
@@ -52,6 +47,11 @@ void timerecord() {
   if (timemin > 59) {
     timemin = 0;
     timehours = timehours + 1;
+  }
+  if (timehours > 12) {
+    timehours = 1;
+    timemin = 0;
+    timeseconds = 0;
   }
 }
 
