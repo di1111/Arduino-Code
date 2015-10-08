@@ -6,10 +6,10 @@ This Program takes the temp from a sense wire and outputs the time and temp.
 
  */
  
-int outputpin = 0      // Tempture output
-int timeseconds = 0
-int timemin = 0
-int timehours = 0
+int outputpin = 0;      // Tempture output
+int timeseconds = 0;
+int timemin = 0;
+int timehours = 0;
 
 void setup()
 {
@@ -19,7 +19,6 @@ void setup()
     ; // wait for serial port to connect. Needed for Leonardo only
   }
   
-  establishContact();  // send a byte to establish contact until receiver responds
 }
 
 void loop()
@@ -28,10 +27,15 @@ void loop()
 float millivolts= (rawvoltage/1024.0) * 5000;
 float celsius= millivolts/10;
 float fahrenheit = (celsius * 9)/5 +32;
-timerecord()
+timerecord();
 
-Serial.println (timehours + ":" + timemin + ":" + timeseconds);
-Serial.println(fahrenheit + "°F");
+Serial.println(timehours);
+Serial.println(":");
+Serial.println(timemin);
+Serial.println(":");
+Serial.println(timeseconds);
+Serial.println(fahrenheit);
+Serial.println("°F");
 delay(1000);
 }
 
