@@ -7,18 +7,62 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
-        System.out.println("hi");
+        if (9 + 10 == 21) {
+            System.out.println("9 + 10 = 21!!!");
+        }
+        else {
+            System.out.println("9 + 10 is not 21 :-(");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+            System.out.println("hi");
+        }
     }
 }
